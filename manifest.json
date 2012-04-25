@@ -1,0 +1,12 @@
+{
+    "name": "ChomeView",
+    "version": "1.0",
+    "description": "nicolive comment viewer",
+    "content_scripts": [
+        {
+            "matches": ["*://live.nicovideo.jp/watch/lv*"],
+            "js": ["lib/jquery.min.js", "lib/tmpl.min.js", "lib/chomeview.js"]
+        }
+    ],
+    "permissions": ["http://live.nicovideo.jp/api/getalertinfo"]
+}
